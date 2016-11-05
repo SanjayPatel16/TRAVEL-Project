@@ -1,0 +1,420 @@
+/********************************
+
+  		  Primary_color = #f5ab68
+  Deep_background_color = #e7e7e7
+  Panel_backgroun_color = #f7f7f7
+  			 Font_color = #777
+
+********************************/
+
+*
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 'Calibri';
+	color: #777;
+
+}
+
+html, body 
+{
+	margin: 0;
+	font-size: 0.98em;
+	padding: 0;
+}
+
+body { background-color: #e7e7e7; }
+button { cursor: pointer; }
+
+a { text-decoration: none; display: inline-block;}
+
+h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: 300; }
+
+p { margin-top: 10px; color: #777;}
+
+
+/* Container */
+.container 
+{
+	background-color: inherit;
+	height: 500px;
+	margin-top: 60px;
+}
+
+
+/* Navigation Bar */
+.navbar
+{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	background-color: #f7f7f7;
+}
+
+.navbar_company_name 
+{
+	float: left;
+	color: #f5ab68;
+	font-family: 'Tahoma';
+	font-size: 25px;
+	font-weight: 600;
+	margin-top: 12px;
+	margin-left: 20px;
+	text-decoration: underline;
+}
+
+.navbar_btn_panel
+{
+	float: right;
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+
+.navbar_btn_panel > li
+{
+	margin: 0;
+	float: left;
+}
+
+.navbar_btn
+{	
+	display: inline-block;
+	padding: 21px;
+	background-color: inherit;
+	text-decoration: none;
+	font-size: 1rem;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.navbar_btn:hover
+{
+	padding-right: 30px;
+	padding-left: 30px;
+	background-color: #f5ab68;
+	color: #fff;
+}
+
+#booknow_btn_id 
+{
+	height: 60px;
+	background-color: #f5ab68;
+	color: #fff;
+	padding-right: 20px;
+	padding-left: 20px;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+#booknow_btn_id:hover
+{
+	padding-right: 30px;
+	padding-left: 30px;
+	background-color: inherit;
+	color: #f5ab68;
+}
+
+
+/* Buttons */
+.btn 
+{ 
+	border: none; 
+	padding: 10px; 
+	font-size: 14px;
+}
+
+.btn-trasparent
+{
+	border: 1px solid rgba(0,0,0,0);
+	background-color: inherit;
+	color: #fff;
+	font-size: 16px;
+	padding: 0px;
+}
+
+.btn-filled-primary
+{
+	border-radius: 5px;
+	border: 1px solid #f5ab68;
+	background-color: #f5ab68;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;	
+	color: #FFF;
+}
+
+
+
+.btn-filled-primary:hover
+{
+	background-color: inherit;
+	padding-right: 30px;
+	padding-left: 30px;
+	border-color: #fff;
+	color: #fff;
+}
+
+.btn-ghost
+{
+	border-radius: 5px;
+	border: 1px solid #FFF;
+	background-color: inherit;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	color: #FFF;
+}
+
+.btn-ghost:hover
+{
+	border-color: #f5ab68;
+	background-color: #f5ab68;
+	padding-right: 30px;
+	padding-left: 30px;	
+	color: #FFF;
+}
+
+.no-ghost:hover
+{
+	border-color: #f5ab68;
+	background-color: #f5ab68;
+	padding-right: 30px;
+	padding-left: 30px;	
+	color: #FFF;
+}
+
+.btn-ghost-primary
+{
+	border: 1px solid #f5ab68;
+	background-color: inherit;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	border-radius: 5px;
+	color: #f5ab68;
+}
+
+.btn-ghost-primary:hover
+{
+	border-color: #f5ab68;
+	background-color: #f5ab68;
+	padding-right: 30px;
+	padding-left: 30px;	
+	color: #FFF;	
+}
+
+/* Header */
+.header
+{
+	width: 100%;
+	height: 100vh;
+	background: url('../images/landing_header.jpg');
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+ .half-header
+ {
+ 	height: 300px;
+ }
+
+.seperator
+{
+	width: 40%;
+	height: 3px;
+	background-color: #f5ab68;
+	margin: auto;
+}
+
+.header_text_group
+{
+	text-align: center;
+	background-color: ;
+	width: 70%;
+}
+
+.header_text_group > h1
+{
+	color: #f5ab68;
+	font-size: 50px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.header_text_group > p
+{
+	color: #fff;
+
+}
+
+
+/* Section */
+.section
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 20px;
+	padding-left: 20px;
+	text-align: center;
+	background-color: #f7f7f7;
+}
+
+.section-heading
+{
+	color: #f5ab68;
+	font-weight: 300;
+}
+
+.section  > p { color: #777; }
+
+#com_ads_section_id
+{
+	background-image: url('../images/landing_company_ads.jpg');
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#com_ads_section_id > p { color: #fff; }
+
+#programs_section_id
+{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#contact_header_id
+{
+	background-image: url('../images/contact/contact_header.jpg');
+	background-size: cover;
+}
+
+
+/* Cards */
+.card-container { margin-top: 20px; }
+
+.card
+{
+	background-color: rgb(255,255,255);
+	background-color: rgba(255,255,255, 0.9);
+	padding: 50px 20px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 280px;
+	display: inline-block;
+}
+
+.card-horizontal
+{
+	width: auto;
+	margin-bottom: 20px;
+}
+
+.card > p { color: #777; }
+
+
+/* Program */
+.programs_img_group { margin-top: 30px; }
+
+.program-card
+{
+	width: 100%;
+	padding: 100px;
+	background-size: cover;
+}
+
+.program-card > p { color: #fff; }
+
+#program1 
+{ 
+	background-image: url('../images/programs/forest_camping.jpg'); 
+	
+}
+
+#program2 {
+	background-image: url('../images/programs/hiking.jpg'); 
+
+} 
+
+#program3 
+{ 
+	background-image: url('../images/programs/diving.jpg'); 
+
+}
+
+
+/* Footer */
+.footer
+{
+	background: url('../images/footer_bg.jpg');
+	background-size: cover;
+	padding: 30px;
+}
+
+.footer-panel 
+{
+	width: 100%;
+	height: 300px;
+	background-color: rgb(255,255,255);
+	background-color: rgba(255,255,255, 0.7);
+}
+
+.contact_info 
+{
+	width: 35%;
+	height: 300px;
+	background-color: #f5ab68;
+	float: left;
+	padding: 30px;
+}
+
+.contact_info > h2	, .contact_info > p {	color: #fff; }
+
+.contact_info > p { margin-left: 20px; }
+
+.contact_form 
+{
+	width: 65%;
+	height: 240px;
+
+	float: right;
+	padding: 30px;
+}
+
+.contact_form > form
+{
+	width: 90%;
+	text-align: right;
+	margin: auto;
+}
+
+
+/* form */	
+.input-group { width: auto; margin: 5px;}
+
+.text-input
+{
+	width: 100%;
+	padding: 7px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+}

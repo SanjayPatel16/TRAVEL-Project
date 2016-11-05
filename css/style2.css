@@ -1,0 +1,271 @@
+/********************************
+
+  		  Primary_color = #f5ab68
+  Deep_background_color = #e7e7e7
+  Panel_backgroun_color = #f7f7f7
+  			 Font_color = #777
+
+********************************/
+.loading-screen
+{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* modal */
+.modal-background
+{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.5);
+	animation-name: modal_bg_initial;
+	animation-duration: 0.1s;
+	overflow-y: auto;
+}
+
+@-webkit-keyframes modal_bg_initial {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@-moz-keyframes modal_bg_initial {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@-o-keyframes modal_bg_initial {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+.modal-panel
+{
+	margin: 2% auto;
+	width: 60%;
+	background-color: #f7f7f7;
+	animation-name: modal_panel_initial;
+	animation-duration: 0.4s;
+}
+
+@-webkit-keyframes modal_panel_initial {
+	from { transform: translateY(-100px); }
+	to { transform: translateY(0); }
+}
+
+@-moz-keyframes modal_panel_initial {
+	from { transform: translateY(-100px); }
+	to { transform: translateY(0); }
+}
+
+@-o-keyframes modal_panel_initial {
+	from { transform: translateY(-100px); }
+	to { transform: translateY(0); }
+}
+
+.modal-header
+{
+	padding: 12px;
+	background-color: #f5ab68;
+	color: #fff;
+	text-align: left;
+}
+
+.modal-body
+{
+	padding: 50px 30px;
+	text-align: center;
+}
+
+
+/* book now modal */
+#book_now_modal_panel_id > .modal-header { text-align: right; }
+
+#booking_modal_panel_id > .modal-header { text-align: right; }
+
+#book_now_modal_panel_id > .modal-body > form {	margin-top: 20px; }
+
+#contact_modal_id
+{
+	width: auto;
+	box-shadow: 0 3px 10px #CCC;
+	margin: 0;
+}
+
+#contact_modal_id > .modal-body
+{
+	padding: 10px;
+	text-align: right;
+}
+
+.contact-left {
+	width: 50%;
+	background-color: ;
+	display: inline-block;
+	float: left;
+	text-align: right;
+	margin-left: 80px;
+}
+
+.contact-right
+{
+	width: 40%;
+	padding-left: 20px;
+	padding-top: 25px;
+	text-align: left;
+	display: inline-block;
+	background-color: ;
+
+}
+
+/* Total programs */
+#total_programs_header_id
+{
+	background-image: url('../images/programs/total_programs_header.jpg');
+}
+
+.programs-container
+{
+	margin: 30px 50px; /* Vertical: 20px Horizontal: 50px on both sides */
+}
+
+.programs-card
+{
+	width: 100%;
+	height: 240px;
+	background-color: #f7f7f7;
+	margin-bottom: 20px;
+	box-shadow: 0 3px 10px #e1e1e1;
+}
+
+.programs-card-img-right
+{
+	width: 380px;
+	height: 100%;
+	float: left;
+}
+
+.programs-card-detail-right
+{
+	width: 50%;
+	height: 100%;
+	float: left;
+	padding: 25px;
+
+}
+
+.programs-card-img-left
+{
+	width: 380px;
+	height: 100%;
+	float: right;
+}
+
+.programs-card-detail-left
+{
+	width: 50%;
+	height: 100%;
+	float: right;
+	padding: 25px;
+	text-align: right;
+}
+
+/* About office */
+#about_office_header_id
+{
+	background-image: url('../images/about_office/about_office_header.jpg');
+}
+
+/* we_are_hiring section */
+#we_are_hiring_section_id > h4
+{
+	margin-top: 5px;
+	margin-bottom: 15px;
+	color: #f5ab68;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+/* Avaliable Position Sectiom */
+#aval_pos_section_id
+{
+	background-image: url('../images/about_office/aval_pos_section.jpg');
+}
+
+/* about Us Section */
+#about_us_header_id
+{
+	background-image: url('../images/about_us/about_us_header.jpg');
+}
+
+
+#officer_quote_section_id
+{
+	background-image: url('../images/about_us/officer_quote_section.jpg');
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.cir-container
+{
+	/*background-color: red;*/
+}
+
+.cir
+{
+/*	background-color: green;*/
+	margin-bottom: 10px;
+	display: inline-block;
+	text-align: center;
+	width: 300px;
+
+}
+
+.cir > h4 { color: #fff; }
+
+.cir-img
+{
+	width: 180px;
+	height: 180px;
+	border: none;
+	border-radius: 50%;
+	background-color: blue;
+	margin-bottom: 10px;
+
+}
+
+.mid
+{
+	width: 200px;
+	height: 200px;
+}
+
+.program-img-activities
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* Programs Detail */
+
+#hiking_header_id
+{
+	background-image: url('../images/programs/hiking/hiking_header.jpg');
+}
